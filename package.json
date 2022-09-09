@@ -1,0 +1,28 @@
+{
+  "name": "y",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "start": "concurrently \"npm run server\" \"npm run dev\"",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --p 3001"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.5",
+    "json-server": "^0.7.19",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "concurrently": "^6.5.1"
+  }
+}
