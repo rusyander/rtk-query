@@ -6,6 +6,7 @@ import {
 } from "./store";
 
 function App() {
+  // start server ----- json-server --watch db.json
   const [count, setCount] = useState("");
   const [newProduct, setNewProduct] = useState("");
   const [id, setId] = useState("");
